@@ -118,6 +118,7 @@ int nondet_compare(const void *const a, const void *const b)
     return nondet_int();
 }
 
+uint64_t __CPROVER_uninterpreted_hasher(const void *const a);
 int __CPROVER_uninterpreted_compare(const void *const a, const void *const b);
 int uninterpreted_compare(const void *const a, const void *const b)
 {
